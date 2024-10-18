@@ -1,0 +1,123 @@
+/* reset */
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* form */
+.form-wrapper {
+    height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#d9d7cccd, #d9d7cccd), url("../img/bg.jpg") no-repeat center center/cover;
+}
+
+.card {
+    width: 100%;
+    max-width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(#d9d7cccd, #C2E6B4), url("../img/bg.jpg") no-repeat center center/cover;
+
+
+    /* background: rgba( 206, 213, 59, 0.15 ); */
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.form-title-holder {
+    margin-bottom: 10px;
+}
+
+.form-title {
+    font-size: 24px;
+}
+
+.hint {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+.h-line {
+    height: 4px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-size: 15px;
+}
+
+input:not([type="radio"]) {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.required {
+    color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.radio-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.gradient-btn {
+    background: linear-gradient(45deg, #007F73 0%, #4CCD99 100%);
+    color: #fff;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(45deg, #4CCD99 0%, #007F73 100%);
+}
